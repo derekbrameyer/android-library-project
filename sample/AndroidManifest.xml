@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        package="com.example.project.sample"
+        android:versionCode="6"
+        android:versionName="1.4.0">
+
+    <uses-sdk
+            android:minSdkVersion="10"
+            android:targetSdkVersion="17"/>
+
+    <application
+            android:label="My Samples"
+            android:icon="@drawable/ic_launcher"
+            android:theme="@style/Theme.Sherlock.Light.DarkActionBar">
+        <activity
+                android:name=".ListSamples"
+                android:label="My Samples">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".activity.SampleDefaultActivity"
+                android:label="Category/Description">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="com.example.project.sample.SAMPLE"/>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
